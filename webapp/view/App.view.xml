@@ -5,16 +5,18 @@
     displayBlock="true"
 >
     <Shell >
-        <App >
+        <App class="myAppDemoWT">
         <pages>
             <Page title="{i18n>homePageTitle}">
                 <content>
                     <Panel class="sapUiResponsiveMargin"
 							width="auto" headerText="{i18n>helloPanelTitle}">
                         <content>
-                            <Text class="sapUiSmallMargin" text="Hello World"></Text>
+                            <FormattedText
+									htmlText="Hello {/recipient/name}"
+									class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
 
-                            <Button class="sapUiSmallMarginEnd" text="{i18n>showHelloButtonText}" press=".onShowHello"></Button>
+                            <Button class="myCustomButton" text="{i18n>showHelloButtonText}" press=".onShowHello"></Button>
                             <Input value="{/recipient/name}" valueLiveUpdate="true" width="60%" description="Hello {/recipient/name}"></Input>
                         </content>
                     </Panel>
