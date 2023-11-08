@@ -6,15 +6,15 @@ sap.ui.define(['sap/ui/core/mvc/Controller',
 (Controller,MessageToast,JSONModel,ResourceModel)=>{
     "use strict";
 
-
+    
     return Controller.extend('project_web.controller.App',{
        
 
-        onShowHello(){
-            const oBundle = this.getView().getModel("i18n").getResourceBundle()
-            const sReceipent = this.getView().getModel().getProperty("/recipient/name")
-            const sMssg = oBundle.getText("helloMsg",[sReceipent])
-            MessageToast.show(sMssg)
-        }
+        // onShowHello(){
+        //     const oBundle = this.getView().getModel("i18n").getResourceBundle()
+        //     const sReceipent = this.getView().getModel().getProperty("/recipient/name")
+        //     const sMssg = oBundle.getText("helloMsg",[sReceipent])
+        //     MessageToast.show(sMssg)
+        // }
     })
 })
