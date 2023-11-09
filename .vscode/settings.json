@@ -1,3 +1,8 @@
 {
-    "liveServer.settings.port":80
+    "liveServer.settings.port":80,
+    "liveServer.settings.proxy":{
+        "enable": true,
+        "baseUri": "/V2",
+        "proxyUri": "https://services.odata.org/Northwind/Northwind.svc/"
+    }
 }

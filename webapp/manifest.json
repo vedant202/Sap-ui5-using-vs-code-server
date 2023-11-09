@@ -10,13 +10,7 @@
         "version": "1.0.0"
       },
       "dataSources": {
-        "invoiceRemote": {
-          "uri": "/webapp/northwind",
-          "type": "OData",
-          "settings": {
-            "odataVersion": "2.0"
-          }
-        }
+        
       }
     },
     "sap.ui": {
